@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+    <script>
+        $(function() {
+            $("#tabs").tabs();
+            $(".accordion").accordion({ collapsible: true, heightStyle: "content" });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+        <div id="tabs">
+            <ul>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+            </ul>
+            <div id="workouts">
+                <h2>Workouts</h2>
+                <div class="accordion">
+                    <h3>Jumping Jacks</h3>
+                    <div>
+                        <p><strong>Description:</strong> A full-body exercise that increases heart rate and burns calories.</p>
+                        <p><strong>Steps:</strong></p>
+                        <ul>
+                            <li>Stand with feet together and arms at sides.</li>
+                            <li>Jump up, spreading legs and raising arms overhead.</li>
+                            <li>Jump back to the starting position.</li>
+                        </ul>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6UsW0QG0J14" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Squats</h3>
+                    <div>
+                        <p><strong>Description:</strong> A lower body exercise that strengthens legs and core.</p>
+                        <p><strong>Steps:</strong></p>
+                        <ul>
+                            <li>Stand with feet shoulder-width apart.</li>
+                            <li>Lower hips back and down while keeping your chest up.</li>
+                            <li>Push through your heels to return to standing.</li>
+                        </ul>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/irfw1gQ0foQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="nutrition">
+                <h2>Meal Plans</h2>
+                <div class="accordion">
+                    <h3>Breakfast: Champorado</h3>
+                    <div>
+                        <p><strong>Description:</strong> A sweet chocolate rice porridge.</p>
+                        <p><strong>Health Benefits:</strong> Provides energy from carbohydrates, antioxidants from cocoa, and calcium from milk.</p>
+                    </div>
+                    <h3>Lunch: Sinigang na Hipon</h3>
+                    <div>
+                        <p><strong>Description:</strong> A sour shrimp soup cooked with tamarind and vegetables.</p>
+                        <p><strong>Health Benefits:</strong> Rich in protein from shrimp, vitamin C from tamarind, and fiber from vegetables.</p>
+                    </div>
+                    <h3>Dinner: Bicol Express</h3>
+                    <div>
+                        <p><strong>Description:</strong> A spicy pork dish cooked in coconut milk and chili.</p>
+                        <p><strong>Health Benefits:</strong> Good source of protein, healthy fats from coconut milk, and metabolism-boosting chili peppers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
